@@ -9,6 +9,16 @@ const randomDiceImage2 = "images/dice" + randomNumber2 + ".png";
 document.querySelector(".img1").setAttribute("src", randomDiceImage1); // Player 1
 document.querySelector(".img2").setAttribute("src", randomDiceImage2); // Player 2
 
+// Results
+
+if (randomNumber1 > randomNumber2) {
+    document.querySelector("h1").innerHTML = "🏆 Player 1 wins";
+} else if (randomNumber1 < randomNumber2) {
+    document.querySelector("h1").innerHTML = "Player 2 wins 🏆";
+} else {
+    document.querySelector("h1").innerHTML = "It's a draw!";
+}
+
 /**Original solution
 switch (randomNumber1) {
     case 1:
@@ -58,11 +68,3 @@ switch (randomNumber2) {
         document.querySelector(".img2").setAttribute("src", 'images/dice-error.png');
 }
 */
-
-if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = "🏆 Player 1 wins";
-} else if (randomNumber1 < randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player 2 wins 🏆";
-} else {
-    document.querySelector("h1").innerHTML = "It's a draw!";
-}
