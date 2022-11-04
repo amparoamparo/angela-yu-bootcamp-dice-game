@@ -3,8 +3,8 @@ const randomNumber2 = Math.ceil((Math.random()) * 6);
 
 // Better solution
 
-const randomDiceImage1 = "images/dice" + randomNumber1 + ".png"; // Player 1
-const randomDiceImage2 = "images/dice" + randomNumber2 + ".png"; // Player 2
+const randomDiceImage1 = "images/dice" + randomNumber1 + ".png";
+const randomDiceImage2 = "images/dice" + randomNumber2 + ".png";
 
 document.querySelector(".img1").setAttribute("src", randomDiceImage1); // Player 1
 document.querySelector(".img2").setAttribute("src", randomDiceImage2); // Player 2
